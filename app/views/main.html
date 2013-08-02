@@ -11,8 +11,9 @@
         <table class="table table-condensed table-hover">
             <thead>
                 <tr>
-
+                    <th>id</td>
                     <th>series</th>
+                    <th>key</th>
                     <th>size</th>
                     <th>x</th>
                     <th>y</th>
@@ -21,7 +22,9 @@
             </thead>
             <tbody>
                 <tr ng-repeat="vdvdItem in vd" class="vdvRow">
-                    <td class="vdv_series" ng-bind="vdvdItem.series" data-key="{{vdvdItem.key}}" data-id="{{vdvdItem.id}}" data-series="{{vdvdItem.series}}"></td>
+                    <td ng-bind="vdvdItem.id" class="vdv_id muted"></td>
+                    <td class="vdv_series muted" ng-bind="vdvdItem.series" data-key="{{vdvdItem.key}}" data-id="{{vdvdItem.id}}" data-series="{{vdvdItem.series}}"></td>
+                    <td class="vdv_key" ng-bind="vdvdItem.key"></td>
                     <td ng-bind="vdvdItem.size"></td>
                     <td ng-bind="vdvdItem.x"></td>
                     <td ng-bind="vdvdItem.y"></td>
