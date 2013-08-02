@@ -39,11 +39,8 @@ angular.module( 'scatterDemo' )
 								$( 'tr' ).removeClass( 'vdvactive' );
 								//	add active class to row
 								$( row ).addClass( 'vdvactive' );
-								$( '.tableContain' ).scrollTo(row,250);
 								//	animate scrolling into view
-								// $( '.tableContain' ).animate( {
-								// 	scrollTop: $( row ).offset( ).top
-								// }, 500 );
+								$( '.tableContain' ).scrollTo( row, 250 );
 							}
 						} );
 					} );
