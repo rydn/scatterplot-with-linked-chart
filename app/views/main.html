@@ -1,0 +1,35 @@
+<div id="scatterScope" class="row-fuid">
+    <div id="offsetDiv" class="span12">
+        <div id="chart" class="chartWrap ScatterPlot">
+
+        </div>
+    </div>
+
+    
+
+    <div class="span4 tableContain">
+        <table class="table table-condensed table-hover">
+            <thead>
+                <tr>
+
+                    <th>series</th>
+                    <th>size</th>
+                    <th>x</th>
+                    <th>y</th>
+                    <th>group</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="vdvdItem in vd" class="vdvRow">
+                    <td class="vdv_series" ng-bind="vdvdItem.series" data-key="{{vdvdItem.key}}" data-id="{{vdvdItem.id}}" data-series="{{vdvdItem.series}}"></td>
+                    <td ng-bind="vdvdItem.size"></td>
+                    <td ng-bind="vdvdItem.x"></td>
+                    <td ng-bind="vdvdItem.y"></td>
+                    <td ng-bind="vdvdItem.group"></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+</div>
